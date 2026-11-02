@@ -128,7 +128,7 @@
     "bundle": "node esbuild.js",
     "bundle-watch": "node esbuild.js --watch",
     "package": "node esbuild.js --production",
-    "test": "node ./dist/test/runTests.js",
+    "test": "tsc -p ./tsconfig.test.json && node ./out/test/runTests.js",
     "lint": "eslint src --ext ts"
   },
   "dependencies": {

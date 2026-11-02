@@ -1,1 +1,2 @@
+import './vscodeMock';
 import './runAll';

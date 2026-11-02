@@ -15,7 +15,7 @@ export class FileResolver {
   public static getTargetFilePath(
     sourcePdfPath: string,
     suffix: string = '',
-    format: OutputFileFormat = 'md'
+    format: OutputFileFormat = 'txt'
   ): string {
     const dir = path.dirname(sourcePdfPath);
     const baseName = path.basename(sourcePdfPath, path.extname(sourcePdfPath));
@@ -36,7 +36,7 @@ export class FileResolver {
   public static getVersionedFilePath(
     sourcePdfPath: string,
     suffix: string = '',
-    format: OutputFileFormat = 'md'
+    format: OutputFileFormat = 'txt'
   ): string {
     const dir = path.dirname(sourcePdfPath);
     const baseName = path.basename(sourcePdfPath, path.extname(sourcePdfPath));
